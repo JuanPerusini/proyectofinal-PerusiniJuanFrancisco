@@ -5,51 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/styles.css">
+    
+
+
     <title>Cuchillos Setter</title>
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg border-bottom">
-        <div class="container">
-        <a class="navbar-brand" href="#"><img src="./assets/logomarca.png" alt="logo de la marca" class="w-25"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+<!-- Header -->
+<header class="navbar navbar-expand-lg border-bottom d-flex">
+    <div class="container">
+    <a class="navbar-brand" href="#"><img src="./assets/logomarca.png" alt="logo de la marca" class="w-25"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link" href="./pages/nuestros-productos.html">Productos</a>
             </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Productos
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./Pages/productos-cuchillos.html">Cuchillos</a></li>
-                    <li><a class="dropdown-item" href="./Pages/productos-utensilios.html">Utensilios</a></li>
-                    <li><a class="dropdown-item" href="./Pages/productos-comboscompletos.html">Combos Completos</a></li>
-                    <li><a class="dropdown-item" href="./Pages/productos-tablasyvasos.html">Tablas y Vasos</a></li>
-                </ul>
+            <li class="nav-item">
+            <a class="nav-link" href="./Pages/nuestroservicio.html">Nuestro Servicio</a>
             </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./Pages/nuestroservicio.html">Nuestro Servicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
-            </li>
-            </ul>
-        </nav>
-        </div>
-    </header>
+            <li class="nav-item">
+            <a class="nav-link" href="./Pages/contacto.html">Contacto</a>
+        </li>
+        </ul>
+    </nav>
+    </div>
+</header>
 <!-- Hero -->
     <main>
         <section class="hero">
 
             <div class="hero_text">
-                <h1>Cuchillos Setter</h1>
-                <h2>Fabricados Artesanalmente en Acero Inoxidable
+                <h1 class="fs-1">Cuchillos Setter</h1>
+                <h2 class="fs-2">Fabricados Artesanalmente en Acero Inoxidable
                     <br>
                     Since - 2018
                 </h2>
@@ -57,21 +54,21 @@
 
         </section>
 <!-- Promo -->
-        <section class="promo">
-            <div class="container_promo">
-                <article class="tarjeta__promo">
+        <section class="promo d-flex flex-column flex-lg-row">
+            <div class="container_promo d-flex flex-column align items text-center p-4">
+                <article class="tarjeta__promo d-lg-flex flex-column align-items-center">
                     <img src="./assets/entrega-rapida.png" alt="">
                     <h3 class="titulo__promo">Envio Pack</h3>
                 </article>
             </div>
-            <div class="container_promo">
-                <article class="tarjeta__promo">
+            <div class="container_promo d-flex align items text-center p-4">
+                <article class="tarjeta__promo d-lg-flex flex-column align-items-center">
                     <img src="./assets/hand-shake.png" alt="">
                     <h3 class="titulo__promo">Mercado Pago</h3>
                 </article>
             </div>
-            <div class="container_promo">
-                <article class="tarjeta__promo">
+            <div class="container_promo d-flex align items text-center p-4">
+                <article class="tarjeta__promo d-lg-flex flex-column align-items-center">
                     <img src="./assets/whatsapp.png" alt="">
                     <h3 class="titulo__promo">Whatsapp</h3>
                 </article>
@@ -82,29 +79,53 @@
             <h3>Categorias</h3>
                 <div class="etiqueta__categoria">
 
-                    <article class="tarjeta__categoria">
-                        <img src="./assets/cuchillos_categorias.jpg" alt="" class="tarjeta__img">
-                        <h4><a href="./Pages/productos-cuchillos.html">Cuchillos</a></h4>
-                    </article>
+                    <div class="tarjeta__categoria ">
+                        <img src="./assets/cuchillos_categorias.jpg" alt="" class="tarjeta__img pb-3">
+                        <!-- <h4 class="btn btn-primary"><a href="./Pages/productos-cuchillos.html">Cuchillos</a></h4> -->
+                        <a class="btn btn-light" href="./Pages/productos-cuchillos.html" role="button">Cuchillos</a>
+                    </div>
                 
-                    <article class="tarjeta__categoria">
-                        <img src="./assets/tablasyvasos_categorias.jpg" alt="" class="tarjeta__img">
-                        <h4><a href="./Pages/productos-tablasyvasos.html" class="tarjeta__boton">Tablas y Vasos</a></h4>
-                    </article>
+                    <div class="tarjeta__categoria">
+                        <img src="./assets/tablasyvasos_categorias.jpg" alt="" class="tarjeta__img pb-3">
+                        <a class="btn btn-light" href="./Pages/productos-tablasyvasos.html" role="button">Tablas y Vasos</a>
+                    </div>
                 
-                    <article class="tarjeta__categoria">
-                        <img src="./assets/utenisilios_categorias.jpg" alt="" class="tarjeta__img">
-                        <h4><a href="./Pages/productos-utensilios.html">Utensilios</a></h4>
-                    </article>
+                    <div class="tarjeta__categoria">
+                        <img src="./assets/utenisilios_categorias.jpg" alt="" class="tarjeta__img pb-3">
+                        <a class="btn btn-light" href="./Pages/productos-utensilios.html" role="button">Utensilios</a>
+                    </div>
                     
                 </div>
         </section>
-
-
 </main>
 
+<!-- Footer -->
+<footer>
+<section class="container-fluid bg-setter">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex flex-column align-items-center">
+                <img src="./assets/logomarca.png" alt="logo marca" class="w-25">
+                <p class="fs-6">Cuchillos Setter | Derechos reservados</p>
+                <span>cuchillosseter@gmail.com</span>
+            </div>
+            <div>
+                <h4 class="text-center p-3">Nuestras Redes</h4>
+                    <div class="d-flex justify-content-around fs-2 pb-3 mb-3">
+                        <a href="https://www.instagram.com/cuchillos.setter/?hl=es"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100032546276541"><i class="bi bi-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=5493496650446&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+</footer>
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
