@@ -1,0 +1,51 @@
+.hero{
+    height: 99vh;
+    background-image: url(../assets/herotres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &_text{
+        text-align: center;    
+        color:rgb(255, 255, 255);
+        font-family: 'Lora', serif;
+        text-shadow:50px
+    }
+}
+
+.promo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &_container{
+padding: 8px;
+}}
+
+
+
+.categorias{
+    text-align: center;
+    background-image: url(../assets/tablas.jpg);
+    padding: 30px;
+    color:rgb(251, 243, 221);
+    font-size: 3rem;
+    &__etiquetas{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    &__tarjeta{
+        width: 250px;    
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding: 15px;
+        text-align: center;}
+    &__img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,16 @@
+.bg_tablas{
+    background-image: url(../assets/tablas.jpg);
+}
+
+.img_servicios{
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+}
+
+.servicios__titulo{
+    font-family: 'Quicksand', sans-serif;
+    &__texto{
+        font-family: 'Quicksand', sans-serif;
+    }
+}

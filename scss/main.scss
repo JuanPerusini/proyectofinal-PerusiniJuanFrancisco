@@ -1,0 +1,13 @@
+@import "./pages/index";
+@import "./pages/nuestros-productos";
+@import "./pages/nuestroservicio";
+@import"./pages/contacto";
+@import "./pages/productos-cuchillos";
+
+
+@import "./layout/mediaq";
+
+
+@mixin mobile-lg {
+    @media (min-width: 768px){
+        @content}}
